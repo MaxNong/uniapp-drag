@@ -1,4 +1,4 @@
-# configurable-mps
+# config-mps
 
 ## Project setup
 ```

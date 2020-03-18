@@ -1,0 +1,116 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.home-page {
+  height: 100%;
+}
+.header-bar {
+  height: 60px;
+  width: 100%;
+  z-index: 9;
+  // background: #4CD964;
+  border-bottom: 1px solid #ebedf0;
+  position: fixed;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding-right: 20px;
+  // box-shadow: border-box;
+  // box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  padding-top: 60px;
+  background: #f8f8f8;
+  // box-sizing: border-box;
+  .nav-cus-type {
+    width: 76px;
+    height: 100%;
+    border-right: 1px solid #ebedf0;
+    background: #ffffff;
+    text-align: center;
+    // background: #007AFF;
+    // border: 1px solid #a5a5a5;
+    // box-shadow: border-box;
+    // box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
+  }
+  .nav-components {
+    width: 200px;
+    // background: #2C405A;
+    // border: 1px solid #a5a5a5;
+    height: 100%;
+    background: #ffffff;
+    padding-top: 10px;
+    // padding-top: 15px;
+    // box-shadow: border-box;
+    // box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
+  }
+  .page-div {
+    flex: 1;
+    // background: #ffffff;
+    min-height: 100%;
+    // box-shadow: border-box;
+    // box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
+    .prediv-box {
+      top: 20px;
+      background: #ffffff;
+      width: 375px;
+      height: 640px;
+      // min-height: 100px;
+      margin: 0 auto;
+      // border: 1px solid #a5a5a5;
+      box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
+      box-shadow: border-box;
+      position: relative;
+      .replace-box {
+        position: absolute;
+        border: 1px dashed #155bd4;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        // min-height: 100px;
+        opacity: 0;
+      }
+      .content-box {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        // min-height: 100px;
+      }
+      .in-container {
+        opacity: 1;
+      }
+    }
+  }
+  .current-console {
+    width: 376px;
+    height: 100%;
+    border-left: 1px solid #ebedf0;
+    background: #ffffff;
+    padding: 18px;
+    // background: #3F536E;
+    // border: 1px solid #a5a5a5;
+    // box-shadow: border-box;
+    // box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+.preview-header {
+  width: 375px;
+  position: relative;
+  height: 64px;
+  .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
